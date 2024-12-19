@@ -1,7 +1,12 @@
 const config = defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "shadcn-nuxt",
+    "@nuxt/test-utils/module",
+    "@pinia/nuxt",
+  ],
   srcDir: "src",
   shadcn: {
     prefix: "",

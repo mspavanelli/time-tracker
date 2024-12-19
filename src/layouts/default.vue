@@ -3,8 +3,10 @@ import Sidebar from "@/components/widgets/Sidebar/index.vue";
 </script>
 
 <template>
-  <div class="h-screen">
+  <div class="flex h-screen">
     <Sidebar />
-    <slot />
+    <main class="flex-1 p-4">
+      <slot />
+    </main>
   </div>
 </template>
